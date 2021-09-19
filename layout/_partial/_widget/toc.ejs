@@ -1,0 +1,10 @@
+<% if(is_post() && toc(post.content)){ %> 
+    <div id="widget-toc-root" class="widget-root">
+        <div id="widget-toc-title" class="widget-title" style="background-color: <%= color %>;">
+            目录
+        </div>
+        <div id="widget-toc-content">
+            <%- toc(post.content, {list_number: false}) %> 
+        </div>
+    </div>
+<% } %> 

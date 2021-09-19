@@ -1,0 +1,24 @@
+#widget-nav-root
+    animation: slideInUp; 
+    animation-duration: 1.5s
+    a
+        text-decoration:none
+        color: var(--link-blue)
+        display: block
+
+        &:hover
+            color: $global-yellow
+            background-color: rgba(37, 183, 234, 10%)
+            box-shadow:0.5em 0.5em 2em white inset
+            border-radius: 0.4em
+
+    #widget-nav-item
+        padding: 0.3em 1em
+        display: flex
+        flex-direction: row
+        span
+            display: inline-block
+            margin-left: 0.5em
+            letter-spacing: 0.05em
+        
+       

@@ -1,0 +1,26 @@
+<div id="posts-root">
+    <% page.posts.forEach((post) => { 
+        colors = ['#4A7AFF','#FFC01D','#29C7E5','#FF83B9','#FF4A57','#A155FF']
+        color = colors[Math.floor(Math.random() * 5)]    
+    %>
+        <div id="post-container">
+            <a id="post-a" href="<%- url_for(post.path)%>">
+                <div id="post-title" style="background-color: <%= color %>;">
+                    <h1><%- post.title %></h1>
+                </div>
+            </a>
+            <% if (post.excerpt){ %>
+                <div id="post-summary">
+                    <%- post.excerpt %>
+                    <% if (theme.excerpt_link){ %>
+                        <a href="<%- url_for(post.path) %>#more"><div id="post-readmore"><%= theme.excerpt_link %></div></a>
+                    <% } %>
+                </div>      
+            <% } else { %>
+                <div id="post-summary">
+                    <%- post.content %>
+                </div>               
+            <% } %>                
+        </div>
+    <% }) %>
+</div>

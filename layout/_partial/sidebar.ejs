@@ -1,0 +1,33 @@
+<aside id="sidebar">
+    <div id="sidebar-root">
+        <% theme.widgets.forEach((widget) => { 
+            colors = ['#4A7AFF','#FFC01D','#29C7E5','#FF83B9','#FF4A57','#A155FF']
+            color = colors[Math.floor(Math.random() * 5)] 
+        %>     
+            <% if(widget == 'toc'){ %>
+                <%- partial('./_widget/' + widget, {color: color, post: post}) %> 
+            <% }else{ %>
+                <%- partial('./_widget/' + widget, {color: color}) %>      
+            <% } %>
+        <% }) %> 
+    </div>
+</aside>
+<aside id="sidebar-mobile">
+    <div id="sidebar-bg-mobile"></div>
+    <input type="checkbox" id="sidebar-btn-mobile" />
+    <div id="sidebar-root-mobile">
+        <% theme.widgets.forEach((widget) => { 
+            colors = ['#4A7AFF','#FFC01D','#29C7E5','#FF83B9','#FF4A57','#A155FF']
+            color = colors[Math.floor(Math.random() * 5)] 
+        %>     
+            <% if(widget == 'toc'){ %>
+                <%- partial('./_widget/' + widget, {color: color, post: post}) %> 
+            <% }else{ %>
+                <%- partial('./_widget/' + widget, {color: color}) %>      
+            <% } %>
+        <% }) %>
+        <div id="theme-info">
+            <span id="theme-name">Bubble Gum</span>    
+        </div> 
+    </div>
+</aside>

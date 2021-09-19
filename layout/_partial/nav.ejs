@@ -1,0 +1,5 @@
+<div id="nav-root">
+    <% for (var i in theme.menu){ %>
+        <a href="<%- url_for(theme.menu[i]) %>"><div id="nav-item"><%= i %></div></a>
+    <% } %>
+</div>

@@ -1,0 +1,106 @@
+@import "./header"
+@import "./nav";
+@import "./posts";
+@import "./article";
+@import "./sidebar";
+@import "./footer";
+@import "./widgets/widget";
+@import "./widgets/nav";
+@import "./widgets/toc";
+@import "./widgets/about";
+@import "./comment/comment";
+
+$highlight = hexo-config("highlight") || "tomorrow-night"
+@import "./_highlight/" + $highlight
+
+body
+    font-size: 15px
+    background-color: var(--site-background-color)
+    color: var(--global-font-color)
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-weight: 400
+    line-height: 1.7 
+
+*
+    margin:0
+    padding:0
+    outline: 0;
+    vertical-align: baseline;
+
+a
+  text-decoration: none
+
+#body-container
+  display: flex
+  flex-direction: row
+  justify-content: center
+
+  @media screen and (max-width: 680px)
+    display: block
+
+.highlight
+  overflow-x: auto
+  margin: 1rem 0
+  padding: 10px 15px
+  border-radius: 4px
+  -webkit-border-radius: 4px
+  font-size: 2px
+  font-family: 'Consolas'
+
+  figcaption
+    margin: -5px 0 5px
+    transform: scale(1)
+
+    a
+      float: right
+      color: $color-meta-code
+      font-style: italic
+      font-size: .8em
+
+      underline(10px, blue)
+
+    a:hover
+      color: var(--link-blue)
+
+    &:before, content: ""
+      display: table
+
+    &:after
+      clear: both
+
+  &:hover 
+    .btn-copy
+      opacity: 1
+
+  .btn-copy
+    font-size: 1.2rem
+    position: absolute
+    right: 20px
+    opacity: 0
+    transition: opacity 0.2s ease-in
+    &:hover
+      color: var(--link-blue)
+
+  pre
+    margin: 0
+    padding: 0
+    border: none
+    background: none
+
+  table
+    width: auto
+
+  td.gutter
+    text-align: right
+    opacity: .2
+
+  .line
+    height: 22px
+
+// 去掉Valine表情的默认尺寸
+  .vemoji
+    max-width: 100% !important
+
+@font-face
+  font-family: bubble
+  src: url(/font/Balbaleo.otf);

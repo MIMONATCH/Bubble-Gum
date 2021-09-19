@@ -1,0 +1,12 @@
+if(hexo-config("scheme") == "auto"){
+    @media (prefers-color-scheme: dark) {
+        @import "dark";
+    }
+    @media (prefers-color-scheme: light) {
+        @import "light";
+    }
+}else if(hexo-config("scheme") == "light" || hexo-config("scheme") == "night"){
+    @import hexo-config("scheme")
+}else{
+    @import light
+}

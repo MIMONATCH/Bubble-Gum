@@ -1,0 +1,57 @@
+#header-root
+    width: 100%
+    height: 100%
+    position: relative
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    
+    video
+        width 100%
+        height 100%
+        filter: blur(0.25em);
+
+    #header-img
+        width 100%
+        height 100%
+        filter: drop-shadow(16px 16px 20px var(--global-shadow)) opacity(75%) blur(0.5em)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 100% 100%
+       
+    #header-filter
+        position absolute
+        width 100%
+        height 100%
+
+        &:before
+            background: linear-gradient(rgba(0,0,0,0.2), transparent)
+
+        &:after
+            background: linear-gradient(transparent, blue)      
+        
+    #header-title
+        position absolute
+        color: white
+        font-size: 10em
+        text-shadow: 5px 5px 5px var(--global-shadow)
+ 
+        #subtitle
+            display: block
+            margin: 0.3em
+            padding: 0.15em 0
+            text-align: center
+            font-size: 0.2em
+            color: white
+            background: 
+                linear-gradient(to right, transparent 0%, var(--global-red) 14%, var(--global-pink) 28%, var(--global-yellow) 41%, var(--global-blue) 55%, var(--global-cyan) 68%, var(--global-purple) 83%, transparent 100%)
+            opacity 80%
+            border-radius: 0.2em
+            box-shadow: 0 0.1em 0.1em var(--global-shadow)
+
+        @media screen and (min-width 680px) and (max-width 1180px)
+            font-size: 7em
+
+        @media screen and (max-width 680px)
+            font-size: 5em

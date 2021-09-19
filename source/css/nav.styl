@@ -1,0 +1,28 @@
+#nav-root
+    height 5em
+    background-color var(--widget-background-color)
+    display flex
+    flex-direction row
+    justify-content center
+    align-items center
+    margin 2em 3em 1em 3em
+    border-radius 0.6em
+    box-shadow 0 0.3em 0.4em var(--global-shadow)
+
+    div
+        height 100%
+        color var(--link-blue)
+
+    #nav-item
+        text-align center
+        margin 0 2em
+        display inline-block
+        border-bottom 0.2em solid transparent
+        border-top 0.2em solid transparent
+
+        &:hover
+            border-bottom 0.2em solid var(--global-blue)
+
+    @media screen and (max-width: 680px)
+        display: none
+        

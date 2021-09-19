@@ -1,0 +1,46 @@
+menu:
+  Home: /
+  Archives: /archives
+  About: /about
+rss: /atom.xml
+# Sidebar
+sidebar: right
+
+widgets:
+- nav
+- category
+- tagcloud
+- archive
+- toc
+- about
+
+excerpt_link: Read More
+
+comment:
+    enable: true
+    appId: 16RIoAUdMwdJKhah8eqwpG8e-gzGzoHsz
+    appKey: rjY2FM4qe5PGNokVnDjN7TVk
+
+highlight: tomorrow-night
+
+scheme: auto
+
+social:
+  qq: https://ti.qq.com/open_qq/index2.html?url=mqqapi%3A%2F%2Fuserprofile%2Ffriend_profile_card%3Fsrc_type%3Dweb%26version%3D1.0%26source%3D2%26uin%3D727801812
+  wechat:
+  github: https://github.com/MIMONATCH
+  bilibili: https://space.bilibili.com/9964933
+
+Profile: 
+  url: https://static.xiaoblogs.cn/img/zaozao.gif
+
+beian:
+  ICP_number: 
+  wangan_number: 
+
+baidu_Analyze: 
+  id: 1baad79f3aa5081fc9ff11dc24c8a93a
+
+cdn:
+  valine: https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js
+  animate: https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css

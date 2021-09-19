@@ -1,0 +1,21 @@
+<article id="<%= post.layout %>-<%= post.slug %>" itemscope itemprop="blogPost">
+    <% 
+        colors = ['#4A7AFF','#FFC01D','#29C7E5','#FF83B9','#FF4A57','#A155FF']
+        color = colors[Math.floor(Math.random() * 5)]   
+    %> 
+    <section id="article-section">
+        <header id="article-header">
+            <%- partial('./article/title', {color: color, title: post.title}) %> 
+        </header>  
+        <div id="article-meta"></div>
+        <div id="article-inner">
+            <%- post.content %> 
+        </div>
+        <div id="article-footer">
+
+        </div>
+        <div id="article-comment">
+            <%- partial('./article/comment') %> 
+        </div>
+    </section>
+</article>

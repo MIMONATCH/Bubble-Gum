@@ -1,0 +1,119 @@
+article
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-right: 2em
+
+    #article-header
+        #post-title
+            margin: 2em 0
+            padding: 1em
+
+    #article-section
+        width: 50em
+
+        @media screen and (min-width: 680px) and (max-width: 1080px)
+            width: 30em
+
+        @media screen and (max-width: 680px)
+            margin: 0 1em
+            width: 90%
+    
+    #article-inner
+        
+        h1, h2, h3, h4, h5, h6 
+            margin 0.3em 0
+            padding 0
+            font-weight bold
+            line-height 1.5
+            code 
+                font-size 0.95em
+
+        h1 
+            font-size 1.5em
+        
+        h2 
+            font-size 1.4em
+        
+        h3 
+            font-size 1.3em
+        
+        h4 
+            font-size 1.2em
+        
+        h5, h6 
+            font-size 1.1em
+        
+        h6 
+            font-weight normal
+        
+
+        p 
+            text-align justify
+            display block
+            margin 1.5em 0
+            hyphens: auto
+
+        ul, ol 
+            padding-left 20px
+            margin 1.5em 0
+
+        li
+            margin 0.5em 0
+
+        a 
+            word-wrap()
+            color var(--link-blue)
+            text-decoration none
+            outline none
+            border 0
+            cursor pointer 
+
+        hr 
+            margin 40px 0
+            height 3px
+            border none
+            background-color #ddd
+            background-image repeating-linear-gradient(
+                -45deg,
+                white,
+                white 4px,
+                transparent 4px,
+                transparent 8px
+            )
+
+        dt 
+            font-weight bold
+        
+        dd 
+            margin 0
+            padding 0
+        
+
+        kbd 
+            border 1px solid #ccc
+            border-radius 0.2em
+            background-color #f9f9f9
+            font-family inherit
+            background-image linear-gradient(top #eee white #eee)
+            padding 0.1em 0.3em
+            white-space nowrap       
+
+        img 
+            display: flex
+            flex-direction: row
+            justify-content: center
+            margin auto
+            max-width 100%
+            height auto
+        
+        pre 
+            padding 0.5em
+            overflow auto
+
+        code
+            padding: 0 5px;
+            border: 1px dotted #666;
+
+        
+        

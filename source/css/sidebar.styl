@@ -1,0 +1,81 @@
+#sidebar
+    #sidebar-root
+        width: 20em
+        margin-top 2em
+        display: flex
+        flex-direction: column
+
+        @media screen and (min-width 680px) and (max-width 1180px)
+            width: 15em
+            margin-right: 1em
+
+    @media screen and (max-width 680px)
+        display: none
+
+if(hexo-config("sidebar") == "left")
+    #sidebar
+        #sidebar-root
+            margin-right: 3em
+else    
+    #sidebar
+        #sidebar-root
+            margin-left: 3em
+
+#sidebar-mobile
+    display: none
+
+    #sidebar-bg-mobile
+        position fixed
+        right: 1em
+        bottom: 2em
+        width: 3em
+        height: 3em
+        background-image: url(https://static.xiaoblogs.cn/img/sidebarbtn.png)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 100%
+
+    #sidebar-btn-mobile
+        position fixed
+        right: 1em
+        bottom: 2em
+        width: 3em
+        height: 3em
+        opacity: 0
+        
+        &:checked+div
+            left: 0
+            box-shadow: 7em 0em 20em #878787
+            animation:slide 0.5s ease-out;
+            -webkit-animation:slide 0.5s ease-out;
+
+            @keyframes slide
+                from {left: -17.5em}
+                to {left: 0}
+
+            @-webkit-keyframes slide
+                from {left: -17.5em}
+                to {left: 0}
+     
+    #sidebar-root-mobile
+        position fixed
+        top: 0
+        left: -17.5em
+        width: 15em
+        height: 100%
+        padding: 1em 1em
+        background-color: var(--site-background-color)
+        overflow: scroll
+
+        .widget-root
+            padding: 0.5em 1.5em 1em 1.5em
+
+        #theme-info
+            text-align: center
+            
+            #theme-name
+                font-family: bubble
+                color: var(--link-blue)
+
+    @media screen and (max-width 680px)
+        display: block

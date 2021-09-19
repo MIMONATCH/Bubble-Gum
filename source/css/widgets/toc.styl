@@ -1,0 +1,24 @@
+#widget-toc-root
+    animation: slideInUp; 
+    animation-duration: 3s
+    .toc
+        padding 0
+        margin 1em
+        line-height 1.5em
+        word-wrap: break-word
+
+        .toc-item
+            a
+            .toc-link
+                text-decoration: none
+                color: var(--link-blue)
+
+                &:hover
+                    color: var(--global-yellow)
+
+
+        li
+            list-style-type none
+
+        .toc-child 
+            margin-left 1em
