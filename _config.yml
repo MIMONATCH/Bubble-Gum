@@ -10,9 +10,9 @@ widgets:
 - nav
 - category
 - tagcloud
-- archive
 - toc
 - about
+- ncm-widget
 
 excerpt_link: Read More
 

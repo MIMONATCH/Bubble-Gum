@@ -1,0 +1,16 @@
+<% if(is_post()){ %> 
+    <div id="post-meat-root">
+        <% if(date){ %> 
+            <div id="post-meta-date">
+                <svg t="1632391457240" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1736" width="32" height="32"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#FF6E6E" p-id="1737"></path><path d="M512 512m-398.222222 0a398.222222 398.222222 0 1 0 796.444444 0 398.222222 398.222222 0 1 0-796.444444 0Z" fill="#0C0058" p-id="1738"></path><path d="M426.666667 284.444444v312.888889h256v-85.333333h-170.666667v-227.555556z" fill="#FF6E6E" p-id="1739"></path></svg> 
+                <time datetime="<%= date_xml(post_date) %>" itemprop="datePublished"><%= date(post_date, "YYYY-MM-DD") %></time>    
+            </div>
+        <% } %>
+        <% if(tags.length){ %>  
+            <div id="post-meta-tag">
+                <svg t="1632391428240" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7917" width="32" height="32"><path d="M0.234057 561.883429L562.176 0H1024v438.857143L468.114286 1024z" fill="#FF6E6E" p-id="7918"></path><path d="M111.177143 561.883429l73.903543-73.903543 351.085714 351.085714-74.049829 73.757257L111.177143 561.883429zM729.994971 164.688457a91.457829 91.457829 0 1 1 129.375086 129.316572 91.457829 91.457829 0 0 1-129.375086-129.316572z" fill="#0C0058" p-id="7919"></path></svg>
+                <%- list_tags(page.tags, { show_count: false, style: 'link' }) %>
+            </div>
+        <% } %> 
+    </div>
+<% } %> 

@@ -7,12 +7,14 @@
         <header id="article-header">
             <%- partial('./article/title', {color: color, title: post.title}) %> 
         </header>  
-        <div id="article-meta"></div>
+        <div id="article-meta">
+            <%- partial('./article/meta', {post_date: page.date, tags: page.tags}) %> 
+        </div>
         <div id="article-inner">
-            <%- post.content %> 
+            <%- partial('./article/inner') %> 
         </div>
         <div id="article-footer">
-
+            <%- partial('./article/footer') %> 
         </div>
         <div id="article-comment">
             <%- partial('./article/comment') %> 

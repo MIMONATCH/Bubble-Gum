@@ -9,6 +9,33 @@ article
             margin: 2em 0
             padding: 1em
 
+    #article-meta
+        div
+            display: inline-block
+
+        #post-meat-root
+            #post-meta-date #post-meta-tag
+                display: flex
+                flex-direction: row
+                align-items: center
+
+            svg
+                width: 1em
+                height: 1em
+                margin: 0 1em
+
+            #post-meta-date
+                color: var(--global-cyan)
+
+            #post-meta-tag
+                a
+                    color: var(--global-red)
+
+                &:before
+                    font-size: 2em
+                    content: "|"
+                    padding: 0 0.3em
+
     #article-section
         width: 50em
 
@@ -16,8 +43,7 @@ article
             width: 30em
 
         @media screen and (max-width: 680px)
-            margin: 0 1em
-            width: 90%
+            width: 100%
     
     #article-inner
         
@@ -115,5 +141,15 @@ article
             padding: 0 5px;
             border: 1px dotted #666;
 
+    @media screen and (max-width: 680px)
+        margin: 0 1em
         
-        
+    #article-footer
+        #post-footer-tag
+            a
+                color: var(--link-blue)
+
+                &:before
+                    font-size: 1em
+                    content: "|"
+                    padding: 0 0.3em
