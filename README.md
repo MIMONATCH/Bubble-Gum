@@ -3,7 +3,7 @@
 
 
 
-doc：中文 English
+doc：[中文](https://github.com/MIMONATCH/hexo-theme-BubbleGum/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-theme-BubbleGum/blob/main/doc/README-en.md)
 
 ### 所需版本
 
