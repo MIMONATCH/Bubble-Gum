@@ -1,40 +1,39 @@
 # <img src="https://static.xiaoblogs.cn/img/20210920134002.png" style="zoom: 10%;" />
-像泡泡糖一样的Hexo主题
+
+A Colorful BubbleGum Hexo theme
 
 
 
-doc：中文 English
+doc 中文 English
 
-### 所需版本
+### General
 
-- Hexo3.0及以上
+- hexo 3.0 or later
 
-### 安装
+### Install
 
-在Hexo的`_config.yml`同级目录下，使用下面git命令
+In the `root` directory
 
 ```sh
 git clone https://github.com/MIMONATCH/hexo-theme-BubbleGum.git themes/bubblegum
 ```
 
-改变Hexo的`_config.yml`中的theme配置项
+Change theme proprety in `_config.yml` 
 
 ```yaml
 # theme: landscape
 theme: bubblegum
 ```
 
-使用Hexo命令
+Use Hexo command
 
 ```sh
 hexo clean && hexo g
 ```
 
-完成
+Enjoy🍺
 
-### 许可证
+### License
 
 MIT
-
-
 

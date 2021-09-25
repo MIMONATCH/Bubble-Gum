@@ -21,6 +21,10 @@ hexo.extend.filter.register('before_generate', () => {
 
     // inject rasterizehtml
     hexo.extend.injector.register('head_end', () => js(hexo.theme.config.cdn.rasterizehtml));
+
+    // inject lozad
+    hexo.extend.injector.register('head_end', () => js("https://cdn.bootcdn.net/ajax/libs/lozad.js/1.16.0/lozad.min.js"));
+    hexo.extend.injector.register('body_end', () => js("/lib/lozad/lazyload.js"));
 }, -999);
 
 hexo.extend.filter.register('before_generate', function(){
@@ -38,6 +42,25 @@ hexo.extend.filter.register('before_generate', function(){
           return fs.createReadStream(
             path.resolve(path.resolve(__dirname, "../source/font"),"Balbaleo.otf"))
         }
+      },
+      {
+        path: '/lib/lozad/lazyload.js',
+        data: function(){
+          return fs.createReadStream(
+            path.resolve(__dirname,"../snap/lazyload.js"))
+        }
+      },
+      {
+        path: '/img/snap/yuyy.png',
+        data: function(){
+          return fs.createReadStream(
+            path.resolve(path.resolve(__dirname, "../source/img/snap"),"yuyy.png"))
+        }
       }
   ]);
+})
+
+// lazy load tag
+hexo.extend.tag.register('lazyload', (args) => {
+    return '<img class="lozad" data-src='+args[0]+' />'
 })
