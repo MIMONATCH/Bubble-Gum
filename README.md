@@ -1,7 +1,7 @@
 # <img src="https://static.xiaoblogs.cn/img/20210920134002.png" style="zoom: 10%;" />
 像泡泡糖一样的Hexo主题
 
-
+![](https://static.xiaoblogs.cn/img/mix8.jpg)
 
 doc：[中文](https://github.com/MIMONATCH/hexo-theme-BubbleGum/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-theme-BubbleGum/blob/main/doc/README-en.md)
 

@@ -2,7 +2,7 @@
 
 A Colorful BubbleGum Hexo theme
 
-
+![](https://static.xiaoblogs.cn/img/mix8.jpg)
 
 doc [中文](https://github.com/MIMONATCH/hexo-theme-BubbleGum/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-theme-BubbleGum/blob/main/doc/README-en.md)
 
