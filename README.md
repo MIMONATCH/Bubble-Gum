@@ -5,6 +5,8 @@
 
 doc：[中文](https://github.com/MIMONATCH/hexo-theme-BubbleGum/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-theme-BubbleGum/blob/main/doc/README-en.md)
 
+demo: https://mimonarchrd.gitee.io
+
 ### 所需版本
 
 - Hexo3.0及以上
