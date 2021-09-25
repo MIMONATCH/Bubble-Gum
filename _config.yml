@@ -13,13 +13,18 @@ widgets:
 - toc
 - about
 - ncm-widget
+- friends
 
 excerpt_link: Read More
 
+friends:
+  name: Yuyy
+  link: http://yuyy.info
+
 comment:
-    enable: true
-    appId: 16RIoAUdMwdJKhah8eqwpG8e-gzGzoHsz
-    appKey: rjY2FM4qe5PGNokVnDjN7TVk
+  enable: true
+  appId: 16RIoAUdMwdJKhah8eqwpG8e-gzGzoHsz
+  appKey: rjY2FM4qe5PGNokVnDjN7TVk
 
 highlight: tomorrow-night
 
@@ -44,3 +49,4 @@ baidu_Analyze:
 cdn:
   valine: https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js
   animate: https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
+  rasterizehtml: https://cdn.bootcdn.net/ajax/libs/rasterizehtml/1.3.0/rasterizeHTML.allinone.js

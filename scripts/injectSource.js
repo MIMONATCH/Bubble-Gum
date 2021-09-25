@@ -3,7 +3,6 @@ const path = require('path');
 const css = hexo.extend.helper.get('css').bind(hexo);
 const js = hexo.extend.helper.get('js').bind(hexo);
 
-
 // inject css assest
 hexo.extend.filter.register('before_generate', () => {
     if (hexo.config.theme_config) {
@@ -19,6 +18,9 @@ hexo.extend.filter.register('before_generate', () => {
 
     // inject animation
     hexo.extend.injector.register('head_end', () => css(hexo.theme.config.cdn.animate));
+
+    // inject rasterizehtml
+    hexo.extend.injector.register('head_end', () => js(hexo.theme.config.cdn.rasterizehtml));
 }, -999);
 
 hexo.extend.filter.register('before_generate', function(){
@@ -36,6 +38,6 @@ hexo.extend.filter.register('before_generate', function(){
           return fs.createReadStream(
             path.resolve(path.resolve(__dirname, "../source/font"),"Balbaleo.otf"))
         }
-    }
+      }
   ]);
 })

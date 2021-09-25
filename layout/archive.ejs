@@ -1,0 +1,17 @@
+<div id="archive-root">
+    <div id="archive-title">Time Line</div>
+    <% page.posts.sort('date', 'desc').map(function(post, key) { %>
+        <% colors = ['#4A7AFF','#FFC01D','#29C7E5','#FF83B9','#FF4A57','#A155FF'] %>
+        <% color = colors[Math.floor(Math.random() * 5)] %> 
+        <% var pos = key % 2 == 0 ? 'left' : 'right' %> 
+        <div id="archive-row">
+            <div id="archive-card" class="<%= pos %>-archive-card">
+                <div id="archive-line" class="<%= pos %>-archive-line"></div>
+                <a href="<%- url_for(post.path) %> "><div id="archive-inner" class="<%= pos %>-archive-inner" style="background-color: <%= color %>;"><%- post.title %></div></a>
+                <div id="archive-time" class="<%= pos %>-archive-time">
+                    <time datetime="<%= date_xml(page.date) %>" itemprop="datePublished"><%= date(page.date, "YYYY-MM-DD") %></time>
+                </div>
+            </div>
+        </div>
+    <% }) %> 
+</div>

@@ -4,8 +4,10 @@
 <body>
   <% if (is_home()){ %>
     <%- partial('./_partial/header') %> 
-    <%- partial('./_partial/nav') %>
   <% } %>
+  <% if(is_home() || is_archive()){ %> 
+    <%- partial('./_partial/nav') %> 
+  <% } %> 
   <div id="body-container">
     <% if(theme.sidebar == "left"){ %> 
       <%- partial('./_partial/sidebar', {post: page}) %> 
