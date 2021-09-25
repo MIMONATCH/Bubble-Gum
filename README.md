@@ -1,4 +1,4 @@
-# <img src="https://static.xiaoblogs.cn/img/20210920134002.png" style="zoom: 10%;" />
+# <img src="https://static.xiaoblogs.cn/img/20210920134002.png" style="width:30%;height:10%" />
 像泡泡糖一样的Hexo主题
 
 
