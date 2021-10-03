@@ -48,13 +48,6 @@ hexo.extend.filter.register('before_generate', function(){
         }
       },
       {
-        path: '/lib/valine/valineObj.js',
-        data: function(){
-          return fs.createReadStream(
-            path.resolve(__dirname,"../lib/valineObj.js"))
-        }
-      },
-      {
         path: '/img/head/head_icon.png',
         data: function(){
           return fs.createReadStream(
