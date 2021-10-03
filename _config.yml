@@ -1,51 +1,68 @@
+# navigator
 menu:
   Home: /
   Archives: /archives
   About: /about
 rss: /atom.xml
+
 # Sidebar
 sidebar: right
 
+# sidebar widget
 widgets:
 - nav
-- category
-- tagcloud
 - toc
 - about
-- ncm-widget
 - friends
 
+# layout
+# excerpt_link inner
 excerpt_link: Read More
 
+# friend link
 friends:
-  name: Yuyy
-  link: http://yuyy.info
+  name: MyFriends
+  link: https://hexo.io/ 
 
+# article
+# valine comment
 comment:
-  enable: true
-  appId: 16RIoAUdMwdJKhah8eqwpG8e-gzGzoHsz
-  appKey: rjY2FM4qe5PGNokVnDjN7TVk
+  enable: false
+  appId: 
+  appKey: 
 
+# code highlight
+# option: agate tomorrow tomorrow-night
+# you can add your code scheme into hexo-theme-bubblegum/source/css/_highlight folder
 highlight: agate
 
+# scheme
+# option: light dark auto
 scheme: auto
 
+# about widget 
+# wirte your social link
 social:
-  qq: https://ti.qq.com/open_qq/index2.html?url=mqqapi%3A%2F%2Fuserprofile%2Ffriend_profile_card%3Fsrc_type%3Dweb%26version%3D1.0%26source%3D2%26uin%3D727801812
+  qq: 
   wechat:
-  github: https://github.com/MIMONATCH
-  bilibili: https://space.bilibili.com/9964933
+  github: 
+  bilibili: 
 
+# write your profile image link
 Profile: 
-  url: https://static.xiaoblogs.cn/img/zaozao.gif
+  url: 
 
+# footer
+# beian
 beian:
   ICP_number: 
   wangan_number: 
 
+# baidu analyze
 baidu_Analyze: 
-  id: 1baad79f3aa5081fc9ff11dc24c8a93a
+  id: 
 
+# cdn link
 cdn:
   valine: https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js
   animate: https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css

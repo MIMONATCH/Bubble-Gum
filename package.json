@@ -1,0 +1,13 @@
+{
+  "name": "hexo-theme-bubblegum",
+  "version": "1.0.5",
+  "main": "index.js",
+  "repository": "https://github.com/MIMONATCH/hexo-theme-BubbleGum.git",
+  "author": "midou",
+  "license": "MIT",
+  "dependencies": {
+    "hexo-ncm-widget": "^1.0.1",
+    "hexo-vtuber-banner": "^1.0.9",
+    "micromatch": "^4.0.4"
+  }
+}

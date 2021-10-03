@@ -4,7 +4,7 @@
             About Me
         </div>
         <div id="widget-about-content">
-            <div id="widget-about-img" style="background-image: url(<%= theme.Profile.url %>);"></div>
+            <div id="widget-about-img" style="background-image: url(<%= theme.Profile.url ? theme.Profile.url : "/img/head/head_icon.png" %>);"></div>
             <div id="widget-about-name"><%= config.author %></div>
             <div id="widget-about-social">
                 <% for(var item in theme.social) { %>
