@@ -14,10 +14,18 @@ demo: https://mimonarchrd.gitee.io
 
 ### Install
 
-In the `root` directory
+use `yarn` or `npm`
+
+- yarn
 
 ```sh
-git clone https://github.com/MIMONATCH/hexo-theme-BubbleGum.git themes/bubblegum
+yarn add hexo-theme-bubblegum
+```
+
+- npm
+
+```sh
+npm i hexo-theme-bubblegum
 ```
 
 Change theme proprety in `_config.yml` 

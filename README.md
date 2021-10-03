@@ -13,10 +13,18 @@ demo: https://mimonarchrd.gitee.io
 
 ### 安装
 
-在Hexo的`_config.yml`同级目录下，使用下面git命令
+使用`yarn`或者`npm`命令
+
+- yarn
 
 ```sh
-git clone https://github.com/MIMONATCH/hexo-theme-BubbleGum.git themes/bubblegum
+yarn add hexo-theme-bubblegum
+```
+
+- npm
+
+```sh
+npm i hexo-theme-bubblegum
 ```
 
 改变Hexo的`_config.yml`中的theme配置项
