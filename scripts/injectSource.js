@@ -11,7 +11,7 @@ hexo.extend.filter.register('before_generate', () => {
     hexo.extend.injector.register('head_end', () => "<script src= https://hm.baidu.com/hm.js?"+ hexo.theme.config.baidu_Analyze.id +"></script>");
 
     // inject valine 
-    hexo.extend.injector.register('body_end', () => js(hexo.theme.config.cdn.valine));
+    hexo.extend.injector.register('head_end', () => js(hexo.theme.config.cdn.valine));
 
     // inject animation
     hexo.extend.injector.register('head_end', () => css(hexo.theme.config.cdn.animate));
