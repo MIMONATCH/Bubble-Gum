@@ -1,8 +1,8 @@
-# <img src="https://static.xiaoblogs.cn/img/20210920134002.png" style="width:30% height:10%" />
+# <img src="https://static.xiaoblogs.cn/img/20210920134002.png" style="zoom: 33%;" />
 
 A Colorful BubbleGum Hexo theme
 
-![](https://static.xiaoblogs.cn/img/mix8.jpg)
+![](https://static.xiaoblogs.cn/img/%E6%A2%AF%E5%BD%A2.png)
 
 doc [中文](https://github.com/MIMONATCH/hexo-theme-BubbleGum/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-theme-BubbleGum/blob/main/doc/README-en.md)
 
