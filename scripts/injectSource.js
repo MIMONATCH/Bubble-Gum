@@ -12,7 +12,6 @@ hexo.extend.filter.register('before_generate', () => {
 
     // inject valine 
     hexo.extend.injector.register('body_end', () => js(hexo.theme.config.cdn.valine));
-    hexo.extend.injector.register('body_end', () => js("/lib/valine/valineObj.js"));
 
     // inject animation
     hexo.extend.injector.register('head_end', () => css(hexo.theme.config.cdn.animate));
